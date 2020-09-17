@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Hit CSS*/
+.badge {
+  display: inline-block;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 0.1em 0.2em 0.1em 0.2em;
+  margin: 5px;
+  font-size: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  font-weight: 700;
+}
+
+.subtitles {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.hits {
+  padding: 15px;
+}
+
+/* Rating Stars*/
+.filled {
+  color: orange;
+}
+
+/* Panels */
+.left-panel {
+  float: left;
+  width: 240px;
+}
+.panel {
+  margin-top: 2em;
+}
+
+.right-panel {
+  margin-left: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ais-Panel-header {
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-weight: 500;
+}
+/* Search Box */
+.ais-SearchBox {
+  width: 98%;
+}
+.ais-SearchBox-input {
+  height: 50px;
+}
+
+.ais-ClearRefinements {
+  margin-top: 15px;
+}
+
+header {
+  font-size: 38px;
+  font-weight: 700;
+}
+header span {
+  color: #f06a6f;
 }
