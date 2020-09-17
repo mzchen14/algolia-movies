@@ -1,4 +1,5 @@
 {
+  "homepage": "http:/mzchen14.github.io/algolia-movies",
   "name": "algolia-project",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "css-loader": "^4.3.0",
+    "gh-pages": "^3.1.0",
     "style-loader": "^1.2.1"
   }
 }
