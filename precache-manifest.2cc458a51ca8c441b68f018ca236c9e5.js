@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f92e11c80afd81caad18e4401b0a7411",
+    "revision": "ccb9679bc3cf7829f410308f3113a2b8",
     "url": "/algolia-movies/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/algolia-movies/static/css/2.9e82207c.chunk.css"
   },
   {
-    "revision": "c2949a87e794b407a761",
-    "url": "/algolia-movies/static/css/main.cbc240d8.chunk.css"
+    "revision": "d75300f548d968ead892",
+    "url": "/algolia-movies/static/css/main.ef289b97.chunk.css"
   },
   {
     "revision": "576d4137ba2d8961937a",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/algolia-movies/static/js/2.e9730be7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2949a87e794b407a761",
+    "revision": "d75300f548d968ead892",
     "url": "/algolia-movies/static/js/main.d703e898.chunk.js"
   },
   {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/algolia-movies/static/css/main.cbc240d8.chunk.css",
+    "main.css": "/algolia-movies/static/css/main.ef289b97.chunk.css",
     "main.js": "/algolia-movies/static/js/main.d703e898.chunk.js",
     "main.js.map": "/algolia-movies/static/js/main.d703e898.chunk.js.map",
     "runtime-main.js": "/algolia-movies/static/js/runtime-main.d2034627.js",
@@ -9,17 +9,17 @@
     "static/js/2.e9730be7.chunk.js": "/algolia-movies/static/js/2.e9730be7.chunk.js",
     "static/js/2.e9730be7.chunk.js.map": "/algolia-movies/static/js/2.e9730be7.chunk.js.map",
     "index.html": "/algolia-movies/index.html",
-    "precache-manifest.663d8f53735b041049ea27567042525f.js": "/algolia-movies/precache-manifest.663d8f53735b041049ea27567042525f.js",
+    "precache-manifest.2cc458a51ca8c441b68f018ca236c9e5.js": "/algolia-movies/precache-manifest.2cc458a51ca8c441b68f018ca236c9e5.js",
     "service-worker.js": "/algolia-movies/service-worker.js",
     "static/css/2.9e82207c.chunk.css.map": "/algolia-movies/static/css/2.9e82207c.chunk.css.map",
-    "static/css/main.cbc240d8.chunk.css.map": "/algolia-movies/static/css/main.cbc240d8.chunk.css.map",
+    "static/css/main.ef289b97.chunk.css.map": "/algolia-movies/static/css/main.ef289b97.chunk.css.map",
     "static/js/2.e9730be7.chunk.js.LICENSE.txt": "/algolia-movies/static/js/2.e9730be7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d2034627.js",
     "static/css/2.9e82207c.chunk.css",
     "static/js/2.e9730be7.chunk.js",
-    "static/css/main.cbc240d8.chunk.css",
+    "static/css/main.ef289b97.chunk.css",
     "static/js/main.d703e898.chunk.js"
   ]
 }
