@@ -24,7 +24,7 @@ For genre, I set the operator to “and”. From a user perspective, users tend 
 
 #### Display
 
-For the view, based on the attributes of the dataset, I decided to display a poster for the movie, title, year, rating, genres, and list of actors. Because some of the poster images were returning 404 from the server, I decided to set a default “No Image Available” image for the posters that were unavailable. This was to ensure a more coherent overall display. I also used a simple helper function to help me create the star ratings based on the numerical rating from the data for a more appealing visual. Genres were edited to be bubble badges to separate them from the list of actors underneath.
+For the view, based on the attributes of the dataset, I decided to display a poster for the movie, title, year, rating, genres, and list of actors. Because some of the poster images were returning 404 from the server, I decided to set a default “No Image Available” image for the posters that were unavailable. This was to ensure a more cohesive overall display. I also used a simple helper function to help me create the star ratings based on the numerical rating from the data for a more appealing visual. Genres were edited to be bubble badges to separate them from the list of actors underneath.
 
 Keeping most of the facets/filters and clickable features to the left panel and the search/hit results on the right felt like the most clean and intuitive layout for this simple application.
 
