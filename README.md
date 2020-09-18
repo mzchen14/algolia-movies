@@ -28,7 +28,7 @@ For the view, based on the attributes of the dataset, I decided to display a pos
 
 Keeping most of the facets/filters and clickable features to the left panel and the search/hit results on the right felt like the most clean and intuitive layout for this simple application.
 
-Lastly, I also applied some basic css media queries to help with the responsive design so the application is usable on mobile. (Though I did not get to create an open-close sidebar for the filters/facets so it is not as functional as the desktop view.)
+Lastly, I also applied some basic css media queries to help with the responsive design so the application is usable on different screen sizes and mobile. (Though I did not get to create an open-close sidebar for the filters/facets so it is not as functional as the desktop view.)
 
 ### Intentions
 
