@@ -14,6 +14,8 @@ import {
   Pagination,
   RatingMenu,
   Panel,
+  Stats,
+  HitsPerPage,
 } from "react-instantsearch-dom";
 import "./App.css";
 
@@ -29,16 +31,23 @@ const App = () => (
     <InstantSearch indexName="movies" searchClient={searchClient}>
       <div className="left-panel">
         <ClearRefinements />
+        <Stats />
+        <div className="per-page">
+          <span>Display</span>
+          <HitsPerPage
+            defaultRefinement={15}
+            items={[{ value: 10 }, { value: 15 }, { value: 20 }]}
+          />
+          <span>movies per page</span>
+        </div>
         <Panel className="panel" header="Genres">
-          <RefinementList attribute="genre" />
+          <RefinementList attribute="genre" operator="and" />
         </Panel>
         <Panel className="panel" header="Ratings">
-          <RatingMenu
-            attribute="rating"
-            translations={{
-              ratingLabel: "& Up",
-            }}
-          />
+          <RatingMenu attribute="rating" />
+        </Panel>
+        <Panel className="panel" header="Year">
+          <RefinementList attribute="year" operator="or" />
         </Panel>
       </div>
 
@@ -47,7 +56,7 @@ const App = () => (
         <div className="hits">
           <Hits hitComponent={Hit} />
         </div>
-        <Pagination />
+        <Pagination showLast={true} />
       </div>
     </InstantSearch>
   </div>
@@ -69,19 +78,21 @@ const Hit = ({ hit }) => {
       </div>
       <div>
         <span className="subtitles">Rating: </span>
-        {createStar(hit.rating).map((rating) => {
+        {createStar(hit.rating).map((rating, idx) => {
           if (rating === 1) {
-            return <FontAwesomeIcon icon={faStar} className="filled" />;
+            return (
+              <FontAwesomeIcon key={idx} icon={faStar} className="filled" />
+            );
           } else {
-            return <FontAwesomeIcon icon={faStar} />;
+            return <FontAwesomeIcon key={idx} icon={faStar} />;
           }
         })}
       </div>
       <div className="genre">
         <span className="subtitles">Genre:</span>{" "}
-        {hit.genre.map((genre) => {
+        {hit.genre.map((genre, idx) => {
           return (
-            <span key={hit.ObjectId} className="badge">
+            <span key={idx} className="badge">
               {genre}
             </span>
           );
