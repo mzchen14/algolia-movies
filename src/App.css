@@ -59,6 +59,7 @@ body {
 p {
   font-weight: 500;
 }
+
 /* Search Box */
 .ais-SearchBox {
   width: 98%;
@@ -77,4 +78,25 @@ header {
 }
 header span {
   color: #f06a6f;
+}
+
+/* Media */
+@media (max-width: 1024px) {
+  .ais-Hits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ais-Hits-item {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .left-panel {
+    display: none;
+  }
+  .right-panel {
+    margin-left: 0px;
+  }
 }
