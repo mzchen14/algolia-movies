@@ -27,6 +27,7 @@ Here is a link to documentation on Custom Rankings if you would like to read mor
 
 I hope these explanations have helped clarify your understanding. Please do not hesitate to reach out if you have any more questions!
 Cheers,
+
 Ming
 
 ```
@@ -48,6 +49,7 @@ I am sorry to hear that you are finding our new dashboard design inconvenient. W
 We will take your feedback into consideration as we continue to enhance our user experience. If there is anything else I can help you with, please do not hesitate to reach out! Thank you for choosing Algolia.
 
 Best Regards,
+
 Ming
 
 ```
@@ -78,4 +80,5 @@ Please let me know if you have any further questions or need any help getting st
 Thank you for choosing Algolia.
 
 Cheers,
+
 Ming
