@@ -12,6 +12,8 @@ Cheers,
 George\*
 
 **Answer 1**
+
+
 Hi George,
 
 Welcome to the world of search engines! I can most definitely help you define these concepts:
@@ -35,6 +37,8 @@ Regards,
 Matt\*
 
 **Answer 2**
+
+
 Hi Matt,
 
 I am sorry to hear that you are finding our new dashboard design inconvenient. We take pride in providing an intuitive experience on our platform so your feedback is greatly appreciated. The intention behind our new dashboard design was to take a fail-safe approach to ensure customers do not unintentionally delete or clear their indexes.
@@ -52,6 +56,8 @@ Regards,
 Leo\*
 
 **Answer 3**
+
+
 Hi Leo,
 
 It is great to hear you’re interested in integrating Algolia! Here at Algolia, we provide an end-to-end solution and hope to make the implementation process as quick and seamless as possible. From a high level the process will be as follows:
