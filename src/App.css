@@ -11,11 +11,18 @@ body {
 /*Hit CSS*/
 .badge {
   display: inline-block;
-  background-color: lightblue;
+  background-color: #7fc1ea;
   border-radius: 10px;
-  padding: 0.1em 0.2em 0.1em 0.2em;
-  margin: 5px;
+  padding: 0.1em 0.3em 0.1em 0.3em;
+  margin: 0px 2px 0px 2px;
   font-size: 80%;
+  color: white;
+}
+
+.year {
+  font-weight: 600;
+  font-size: 13px;
+  color: #6f82bd;
 }
 
 .title {
@@ -62,7 +69,7 @@ p {
 
 /* Search Box */
 .ais-SearchBox {
-  width: 98%;
+  width: 90%;
 }
 .ais-SearchBox-input {
   height: 50px;
@@ -80,19 +87,47 @@ header span {
   color: #f06a6f;
 }
 
+.ais-Hits-list {
+  display: flex;
+  justify-content: center;
+}
+.ais-Hits-item {
+  display: flex;
+  background-color: white;
+  align-content: center;
+  border-radius: 10px;
+  width: 300px;
+}
+.hit {
+  display: flex;
+  flex-direction: column;
+}
+.poster {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
 /* Media */
 @media (max-width: 1024px) {
   .ais-Hits {
     display: flex;
     flex-wrap: wrap;
   }
+  .ais-Hits-list {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
 
   .ais-Hits-item {
-    flex-basis: 100%;
+    flex-basis: 50%;
   }
 }
 
 @media (max-width: 769px) {
+  header {
+    text-align: center;
+  }
   .left-panel {
     display: none;
   }

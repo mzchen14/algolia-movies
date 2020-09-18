@@ -55,11 +55,17 @@ const App = () => (
 
 const Hit = ({ hit }) => {
   return (
-    <div key={hit.objectID}>
-      <img src={hit.image} alt="movie-poster" />
+    <div className="hit" key={hit.objectID}>
+      <object className="poster" data={hit.image} type="image/png">
+        <img
+          src={process.env.PUBLIC_URL + "/default.jpg"}
+          alt="poster"
+          width="150"
+        />
+      </object>
       <div className="title">
         <Highlight hit={hit} attribute="title" />
-        <span> ({hit.year})</span>
+        <span className="year"> {hit.year}</span>
       </div>
       <div>
         <span className="subtitles">Rating: </span>
@@ -83,7 +89,7 @@ const Hit = ({ hit }) => {
       </div>
       <div className="actors">
         <span className="subtitles">Actors: </span>
-        {hit.actors.join(", ")}
+        <Highlight hit={hit} attribute="actors" />
       </div>
     </div>
   );
