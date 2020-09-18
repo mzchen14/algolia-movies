@@ -10,17 +10,17 @@ Deployed At: [https://mzchen14.github.io/algolia-movies/](https://mzchen14.githu
 
 ### Backend/Pushing Data
 
-On the backend of my application, after creating an Algolia account, I used the given APP ID and Admin API key to import the movies public ‘records’ dataset provided in the dataset repo. For good measure, I also used environment variables in order to hide my API keys. For this step, I used the API client in order to set the settings for the search attributes. For movie records, I set the searchable attributes to: title, alternative titles, year, actors, and genre. I also created a second index just to get a better understanding of using the Algolia dashboard so for this second “actors” dataset I mainly used the dashboard exclusively to customize relevance and attributes. While I pushed two datasets at this step, the rest of my application will be built upon the movie records dataset.
+On the backend of my application, after creating an Algolia account, I used the given APP ID and Admin API key to import the movies public ‘records’ dataset provided in the public dataset repo. For good measure, I also used environment variables in order to hide my API keys. For this step, I used the API client in order to set the settings for the search attributes. For movie records, I set the searchable attributes to: title, alternative titles, year, actors, and genre. I also created a second index just to get a better understanding of using the Algolia dashboard. Therefore for the “actors” dataset I mainly used the dashboard exclusively to customize relevance and attributes. While I pushed two datasets at this step, the rest of my application will be built upon the movie records dataset.
 
 ### Frontend
 
 #### Widgets
 
-Having worked mainly with React, I decided to utilize the React-InstantSearch Library on the frontend. Here, I played around with many widgets, adding and removing ones that I found would provide suitable user experience given this particular dataset. The widgets I ended up using were: Hits, HitsPerPage, Highlight, RefinementList, ClearRefinement, Pagination, RatingMenu, Panels, and Stats.
+Having worked mainly with React, I decided to utilize the React-InstantSearch library on the frontend. Here, I played around with many widgets; adding and removing ones that I found would provide suitable user experience given this particular dataset. The widgets I ended up using were: Hits, HitsPerPage, Highlight, RefinementList, ClearRefinement, Pagination, RatingMenu, Panels, and Stats.
 
 I ended up using the refinement lists for the following attributes: genre, rating, and year.
 
-For genre, I set the boolean operator to “and”. From a user perspective, users tend to select multiple genres in order to narrow down their search rather than expand so I felt that the “and” operator would be the most intuitive in this case. The opposite was true for the “year” facet. I set the “year” refinement list’s operator to “or” since movies are associated with their year of release. Highlight was also applied to match either title or actor as they would be the most searched query types.
+For genre, I set the operator to “and”. From a user perspective, users tend to select multiple genres in order to narrow down their search rather than expand so I felt that the “and” operator would be the most appropriate in this case. The opposite was true for the “year” facet. I set the “year” refinement list’s operator to “or” since movies are associated with their year of release. Highlight was also applied to match either title or actor as they would be the most searched query types.
 
 #### Display
 
@@ -28,7 +28,7 @@ For the view, based on the attributes of the dataset, I decided to display a pos
 
 Keeping most of the facets/filters and clickable features to the left panel and the search/hit results on the right felt like the most clean and intuitive layout for this simple application.
 
-Lastly, I also applied some basic css media queries to help with the responsive design so the application is usable on mobile. (Though I did not get to create an open-close sidebar for the filters/facets so it is not as functional as the desktop view.)
+Lastly, I also applied some basic css media queries to help with the responsive design so the application is usable on different screen sizes and mobile. (Though I did not get to create an open-close sidebar for the filters/facets so it is not as functional as the desktop view.)
 
 ### Intentions
 
