@@ -10,7 +10,7 @@ Deployed At: [https://mzchen14.github.io/algolia-movies/](https://mzchen14.githu
 
 ### Backend/Pushing Data
 
-On the backend of my application, after creating an Algolia account, I used the given APP ID and Admin API key to import the movies public ‘records’ dataset provided in the dataset repo. For good measure, I also used environment variables in order to hide my API keys. For this step, I used the API client in order to set the settings for the search attributes. For movie records, I set the searchable attributes to: title, alternative titles, year, actors, and genre. I also created a second index just to get a better understanding of using the Algolia dashboard. Therefore for the “actors” dataset I mainly used the dashboard exclusively to customize relevance and attributes. While I pushed two datasets at this step, the rest of my application will be built upon the movie records dataset.
+On the backend of my application, after creating an Algolia account, I used the given APP ID and Admin API key to import the movies public ‘records’ dataset provided in the public dataset repo. For good measure, I also used environment variables in order to hide my API keys. For this step, I used the API client in order to set the settings for the search attributes. For movie records, I set the searchable attributes to: title, alternative titles, year, actors, and genre. I also created a second index just to get a better understanding of using the Algolia dashboard. Therefore for the “actors” dataset I mainly used the dashboard exclusively to customize relevance and attributes. While I pushed two datasets at this step, the rest of my application will be built upon the movie records dataset.
 
 ### Frontend
 
