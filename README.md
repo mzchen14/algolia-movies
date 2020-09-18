@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Algolia - Movies
 
-## Available Scripts
+> Solutions Engineering Assignment
+> Technologies Used: Javascript, React, Algolia
 
-In the project directory, you can run:
+Deployed At: [https://mzchen14.github.io/algolia-movies/](https://mzchen14.github.io/algolia-movies/)
 
-### `yarn start`
+## Outline:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Backend/Pushing Data
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+On the backend of my application, after creating an Algolia account, I used the given APP ID and Admin API key to import the movies public ‘records’ dataset provided in the dataset repo. For good measure, I also used environment variables in order to hide my API keys. For this step, I used the API client in order to set the settings for the search attributes. For movie records, I set the searchable attributes to: title, alternative titles, year, actors, and genre. I also created a second index just to get a better understanding of using the Algolia dashboard so for this second “actors” dataset I mainly used the dashboard exclusively to customize relevance and attributes. While I pushed two datasets at this step, the rest of my application will be built upon the movie records dataset.
 
-### `yarn test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Widgets
 
-### `yarn build`
+Having worked mainly with React, I decided to utilize the React-InstantSearch Library on the frontend. Here, I played around with many widgets, adding and removing ones that I found would provide suitable user experience given this particular dataset. The widgets I ended up using were: Hits, HitsPerPage, Highlight, RefinementList, ClearRefinement, Pagination, RatingMenu, Panels, and Stats.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I ended up using the refinement lists for the following attributes: genre, rating, and year.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+For genre, I set the boolean operator to “and”. From a user perspective, users tend to select multiple genres in order to narrow down their search rather than expand so I felt that the “and” operator would be the most intuitive in this case. The opposite was true for the “year” facet. I set the “year” refinement list’s operator to “or” since movies are associated with their year of release. Highlight was also applied to match either title or actor as they would be the most searched query types.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Display
 
-### `yarn eject`
+For the view, based on the attributes of the dataset, I decided to display a poster for the movie, title, year, rating, genres, and list of actors. Because some of the poster images were returning 404 from the server, I decided to set a default “No Image Available” image for the posters that were unavailable. This was to ensure a more coherent overall display. I also used a simple helper function to help me create the star ratings based on the numerical rating from the data for a more appealing visual. Genres were edited to be bubble badges to separate them from the list of actors underneath.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Keeping most of the facets/filters and clickable features to the left panel and the search/hit results on the right felt like the most clean and intuitive layout for this simple application.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Lastly, I also applied some basic css media queries to help with the responsive design so the application is usable on mobile. (Though I did not get to create an open-close sidebar for the filters/facets so it is not as functional as the desktop view.)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Intentions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+My intention for this assignment was to use the opportunity to explore and become acquainted with Algolia’s product. I wanted to experience the ease of use and development firsthand just like a regular customer of the product. From this assignment, I wanted to use a basic dataset and use Algolia in order to create an intuitive basic search application by taking advantage of the plethora of customization options provided by Algolia’s library. While building out this application, one of my main objectives was to explore the different widgets, the built in props and take a glimpse into how one would be able to manipulate the product to suit specific needs.
 
-## Learn More
+### Feedback/Takeaways
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+It was a really fun and eye opening experience using Algolia to implement search. Search is such a fundamental integration for almost every website online and one that people take for granted. Yet, in the bigger scope of things, search is very complex and Algolia took much of the guesswork out of the process. While using Algolia widgets, I couldn’t help but think about how complicated and how much longer it would have taken me to build out each of the widgets from scratch, and despite the extra time and effort, it still would not have been as efficient of a tool as those provided by Algolia. Overall, I found the documentation easy to follow; the code snippets and examples were very useful while building my own application. Although I've only scraped the surface of what Algolia is capable of, I really enjoyed this assignment. Thank you for the opportunity!
