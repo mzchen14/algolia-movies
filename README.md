@@ -1,4 +1,4 @@
-# Algolia - Movies
+# Algolia Movies
 
 > Solutions Engineering Assignment
 >
