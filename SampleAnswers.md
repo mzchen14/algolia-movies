@@ -67,10 +67,10 @@ Hi Leo,
 
 It is great to hear you’re interested in integrating Algolia! Here at Algolia, we provide an end-to-end solution and hope to make the implementation process as quick and seamless as possible. From a high level the process will be as follows:
 
-Prepare and send your data to Algolia
-Configure relevance for the search experience
-Build/Integrating the Search UI
-Analytics/Testing/Security
+1. Prepare and send your data to Algolia
+2. Configure relevance for the search experience
+3. Build/Integrating the Search UI
+4. Analytics/Testing/Security
 
 Throughout the process, you will have access to our intuitive dashboard which is capable of handling the data and configurations. We also have API clients and frontend libraries to support and ease the integration of Algolia search on your website. All of these steps will be covered in our extensive documentation and we also provide 24/7 support should you need any assistance along the way.
 
