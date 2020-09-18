@@ -1,6 +1,7 @@
 # Algolia - Movies
 
 > Solutions Engineering Assignment
+>
 > Technologies Used: Javascript, React, Algolia
 
 Deployed At: [https://mzchen14.github.io/algolia-movies/](https://mzchen14.github.io/algolia-movies/)
