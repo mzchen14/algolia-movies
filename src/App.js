@@ -28,10 +28,12 @@ const App = () => (
     <header>
       <span>Algolia</span> Movies
     </header>
+
     <InstantSearch indexName="movies" searchClient={searchClient}>
       <div className="left-panel">
         <ClearRefinements />
         <Stats />
+
         <div className="per-page">
           <span>Display</span>
           <HitsPerPage
@@ -40,6 +42,7 @@ const App = () => (
           />
           <span>movies per page</span>
         </div>
+
         <Panel className="panel" header="Genres">
           <RefinementList attribute="genre" operator="and" />
         </Panel>
@@ -53,9 +56,11 @@ const App = () => (
 
       <div className="right-panel">
         <SearchBox autoFocus={true} />
+
         <div className="hits">
           <Hits hitComponent={Hit} />
         </div>
+
         <Pagination showLast={true} />
       </div>
     </InstantSearch>
@@ -72,10 +77,12 @@ const Hit = ({ hit }) => {
           width="150"
         />
       </object>
+
       <div className="title">
         <Highlight hit={hit} attribute="title" />
         <span className="year"> {hit.year}</span>
       </div>
+
       <div>
         <span className="subtitles">Rating: </span>
         {createStar(hit.rating).map((rating, idx) => {
@@ -88,6 +95,7 @@ const Hit = ({ hit }) => {
           }
         })}
       </div>
+
       <div className="genre">
         <span className="subtitles">Genre:</span>{" "}
         {hit.genre.map((genre, idx) => {
@@ -98,6 +106,7 @@ const Hit = ({ hit }) => {
           );
         })}
       </div>
+
       <div className="actors">
         <span className="subtitles">Actors: </span>
         <Highlight hit={hit} attribute="actors" />
