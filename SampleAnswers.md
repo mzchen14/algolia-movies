@@ -1,4 +1,4 @@
-*Question 1:
+_Question 1:
 Hello,
 
 I'm new to search engines, and there are a lot of concepts I'm not educated on. To make my onboarding smoother, it'd help if you could provide me with some definitions of the following concepts:
@@ -9,7 +9,7 @@ I'm new to search engines, and there are a lot of concepts I'm not educated on. 
 I'm also struggling with understanding what types of metrics would be useful to include in the "Custom Ranking."
 
 Cheers,
-George*
+George_
 
 **Answer 1**
 
