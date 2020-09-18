@@ -19,9 +19,13 @@ Hi George,
 
 Welcome to the world of search engines! I can most definitely help you define these concepts:
 In broad terms, an index would be a directory of sorts and records would be the data entries in said index. An related analogy would be a phone book being an index and each phone number within the book being a record.
+
 With Algolia, each of your records would consist of key-value pairs containing any sort of information you would like to utilize in search, display or filtering. An Algolia Index would be a collection of these records.
+
 Here is a link to documentation if you would like to read up more on this: [https://www.algolia.com/doc/guides/sending-and-managing-data/prepare-your-data/#algolia-records](https://www.algolia.com/doc/guides/sending-and-managing-data/prepare-your-data/#algolia-records)
+
 For custom ranking, the metrics would depend on which products you want to prioritize putting in front of your customers. For example, from a marketing perspective, you may want to increase the visibility of the best selling products on your website, in which case you would add popularity/number of sales to your custom rankings.
+
 Here is a link to documentation on Custom Rankings if you would like to read more about it:
 [https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/](https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/)
 
@@ -45,6 +49,7 @@ Matt
 Hi Matt,
 
 I am sorry to hear that you are finding our new dashboard design inconvenient. We take pride in providing an intuitive experience on our platform so your feedback is greatly appreciated. The intention behind our new dashboard design was to take a fail-safe approach to ensure customers do not unintentionally delete or clear their indexes.
+
 We will take your feedback into consideration as we continue to enhance our user experience. If there is anything else I can help you with, please do not hesitate to reach out! Thank you for choosing Algolia.
 
 Best Regards,
