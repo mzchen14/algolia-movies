@@ -73,7 +73,7 @@ Leo
 
 Hi Leo,
 
-It is great to hear you’re interested in integrating Algolia! Here at Algolia, we provide an end-to-end solution and hope to make the implementation process as quick and seamless as possible. Integrating Algolia should take a minimal amount of work for you. From a high level the process will be as follows:
+It is great to hear you’re interested in integrating Algolia! Here at Algolia, we provide an end-to-end solution and hope to make the implementation process as quick and seamless as possible. Integrating Algolia should take a minimal amount of work for you. From a high level, the process will be as follows:
 
 1. Prepare and send your data to Algolia
 2. Configure relevance for the search experience
