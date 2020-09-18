@@ -17,7 +17,7 @@ George
 
 Hi George,
 
-I would be happy to help you define these concepts:
+Welcome to the world of search engines! I would be happy to help you define these concepts:
 
 In broad terms, an index would be a directory of sorts and records would be the data entries in said index. An related analogy would be a phone book being an index and each phone number within the book being a record.
 
